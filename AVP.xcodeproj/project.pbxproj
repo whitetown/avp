@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201F906C1FB5D890000F48E4 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F4F5341FB49F1D0059701F /* ContainerView.swift */; };
 		20F4F5231FB48C0F0059701F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F4F5221FB48C0F0059701F /* AppDelegate.swift */; };
 		20F4F5251FB48C0F0059701F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F4F5241FB48C0F0059701F /* ViewController.swift */; };
 		20F4F5281FB48C0F0059701F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F4F5261FB48C0F0059701F /* Main.storyboard */; };
 		20F4F52A1FB48C0F0059701F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20F4F5291FB48C0F0059701F /* Assets.xcassets */; };
 		20F4F52D1FB48C0F0059701F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F4F52B1FB48C0F0059701F /* LaunchScreen.storyboard */; };
+		20F4F5371FB4AC200059701F /* TrackBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F4F5361FB4AC200059701F /* TrackBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		20F4F5291FB48C0F0059701F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20F4F52C1FB48C0F0059701F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20F4F52E1FB48C0F0059701F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20F4F5341FB49F1D0059701F /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		20F4F5361FB4AC200059701F /* TrackBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				20F4F5221FB48C0F0059701F /* AppDelegate.swift */,
 				20F4F5241FB48C0F0059701F /* ViewController.swift */,
+				20F4F5341FB49F1D0059701F /* ContainerView.swift */,
+				20F4F5361FB4AC200059701F /* TrackBarView.swift */,
 				20F4F5261FB48C0F0059701F /* Main.storyboard */,
 				20F4F5291FB48C0F0059701F /* Assets.xcassets */,
 				20F4F52B1FB48C0F0059701F /* LaunchScreen.storyboard */,
@@ -97,6 +103,11 @@
 					20F4F51E1FB48C0F0059701F = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				201F906C1FB5D890000F48E4 /* ContainerView.swift in Sources */,
 				20F4F5251FB48C0F0059701F /* ViewController.swift in Sources */,
 				20F4F5231FB48C0F0059701F /* AppDelegate.swift in Sources */,
+				20F4F5371FB4AC200059701F /* TrackBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
