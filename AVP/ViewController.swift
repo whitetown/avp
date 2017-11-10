@@ -34,7 +34,7 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
 
         self.source.text = defaultURL
 
-        self.helpLabel.frame = container.frame
+        self.helpLabel.frame = CGRect(x: 20, y: 20, width: self.view.frame.size.width - 20*2, height: self.view.frame.size.height / 2)
         self.helpLabel.numberOfLines = 0
         self.helpLabel.font = UIFont.systemFont(ofSize: 12.0)
         self.helpLabel.textAlignment = .center
